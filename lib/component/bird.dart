@@ -1,6 +1,7 @@
 
 import 'package:flame/components.dart';
 import 'package:flame/effects.dart';
+import 'package:flutter/animation.dart';
 import 'package:game/game/assets.dart';
 import 'package:game/game/bird_movement.dart';
 import 'package:game/game/configuration.dart';
@@ -29,8 +30,13 @@ Bird();
 // Fly Function
 void fly(){
   add(
-    MoveByEffect();
+    MoveByEffect(
+      Vector2(0, Config.gravity),
+      EffectController( duration:  0.2, curve: Curves.decelerate),
+      onComplete: ()=>current =BirdMovement.down,
+    )
   );
+  current=BirdMovement.up;
 }
 
 @override
