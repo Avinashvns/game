@@ -22,7 +22,15 @@ class FlappyBirdGame extends FlameGame{
       Background(),
       Ground(),
       bird = Bird(),
-      PipeGroup(),
+      // PipeGroup(),
     ]);
+    interval.onTick=()=> add(PipeGroup());
+  }
+
+  @override
+  void update(double dt){
+    super.update(dt);
+    interval.update(dt);
+
   }
 }
