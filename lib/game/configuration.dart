@@ -8,4 +8,5 @@ class Config{
 
 //  Bird Movement speed
   static const birdVelocity = 210;
+  static const gravity = -100.0;
 }

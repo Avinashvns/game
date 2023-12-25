@@ -1,5 +1,6 @@
 
 import 'package:flame/components.dart';
+import 'package:flame/effects.dart';
 import 'package:game/game/assets.dart';
 import 'package:game/game/bird_movement.dart';
 import 'package:game/game/configuration.dart';
@@ -23,6 +24,13 @@ Bird();
      BirdMovement.up : birdUpFlap,
      BirdMovement.down : birdDownFlap
    };
+}
+
+// Fly Function
+void fly(){
+  add(
+    MoveByEffect();
+  );
 }
 
 @override
