@@ -32,6 +32,7 @@ class FlappyBirdGame extends FlameGame with TapDetector{
   @override
   void onTap(){
     super.onTap();
+    bird.fly();
   }
 
   @override
