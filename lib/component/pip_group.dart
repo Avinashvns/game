@@ -13,7 +13,11 @@ PipeGroup();
      Pipe(
      height: 200,
      pipePosition: PipePosition.top
-   )
+   ),
+     Pipe(
+         height: 300,
+         pipePosition: PipePosition.bottom
+     )
    ]);
 }
 
