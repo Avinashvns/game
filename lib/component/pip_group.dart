@@ -11,7 +11,7 @@ PipeGroup();
   Future<void> onLoad() async {
    addAll([
      Pipe(
-     height: 100,
+     height: 200,
      pipePosition: PipePosition.top
    )
    ]);

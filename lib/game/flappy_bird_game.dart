@@ -4,6 +4,7 @@ import 'package:flame/game.dart';
 import 'package:game/component/background.dart';
 import 'package:game/component/bird.dart';
 import 'package:game/component/ground.dart';
+import 'package:game/component/pip_group.dart';
 
 class FlappyBirdGame extends FlameGame{
   // Object of Bird Component
@@ -15,6 +16,7 @@ class FlappyBirdGame extends FlameGame{
       Background(),
       Ground(),
       bird = Bird(),
+      PipeGroup(),
     ]);
   }
 }
