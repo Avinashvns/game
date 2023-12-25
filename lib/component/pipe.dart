@@ -22,7 +22,7 @@ final PipePosition pipePosition;
    final pipe = await Flame.images.load(Assets.pipe);
    final pipeRotated= await Flame.images.load(Assets.pipeRotated);
 
-   size = Vector2(50 , height);
+   size = Vector2(70 , height);
 
 //    Position of Pip Logic Build
   switch(pipePosition){

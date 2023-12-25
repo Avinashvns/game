@@ -4,7 +4,7 @@ class Config{
   static const groundHeight= 110.0;
 
 //   Pipe Interval
- static const pipeInterval = 1.5;
+ static const pipeInterval = 2.0;
 
 //  Bird Movement speed
   static const birdVelocity = 210;
