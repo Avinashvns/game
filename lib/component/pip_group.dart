@@ -2,6 +2,7 @@
 import 'dart:math';
 
 import 'package:flame/components.dart';
+import 'package:flutter/material.dart';
 import 'package:game/component/pipe.dart';
 import 'package:game/game/configuration.dart';
 import 'package:game/game/flappy_bird_game.dart';
@@ -37,6 +38,11 @@ final _random = Random();
   void update(double dt){
   super.update(dt);
   position.x -=Config.gameSpeed * dt;
+
+  if(position.x < -10){
+    removeFromParent();
+    debugPrint('Removed');
+  }
 
 }
 

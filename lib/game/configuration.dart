@@ -5,4 +5,7 @@ class Config{
 
 //   Pipe Interval
  static const pipeInterval = 1.5;
+
+//  Bird Movement speed
+  static const birdVelocity = 210;
 }
